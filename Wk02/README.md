@@ -45,7 +45,7 @@ Examples...
 ```bash
 $ ./grade
 Please enter your grade: 45
-F
+FL
 
 $ ./grade
 Please enter your grade: 98
