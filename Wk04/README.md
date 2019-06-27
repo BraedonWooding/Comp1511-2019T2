@@ -169,6 +169,14 @@ int main(void) {
 
 What does the above print??
 
+## What does scanf return?? And how can we use it?
+
+Change the array code to read in numbers only printing the odd ones till the user sends an EOF (Ctrl + D) signal.
+
+HINT: Begin by capping the user's maximum number of entered inputs to 10 then think about if you need the array?
+
 ## Functions!!!
 
 On the board.  I'll update these notes with a recap.
+
+Can you edit the array code to use a function?
