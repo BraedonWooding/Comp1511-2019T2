@@ -52,16 +52,16 @@ int main(void) {
 // You should not need to change the printCanvas function.
 void printCanvas(int canvas[N_ROWS][N_COLS]) {
     int row = 0;
-        while (row < N_ROWS) {
-                int col = 0;
-                        while (col < N_COLS) {
-                                    printf("%d ", canvas[row][col]);
-                                                col++;
-                                                        }
-                                                                row++;
-                                                                        printf("\n");
-                                                                            }
-                                                                            }
+    while (row < N_ROWS) {
+        int col = 0;
+        while (col < N_COLS) {
+            printf("%d ", canvas[row][col]);
+            col++;
+        }
+        row++;
+        printf("\n");
+    }
+}
 
 
 // Sets the entire canvas to be blank, by setting each element in the
@@ -169,6 +169,14 @@ int main(void) {
 
 What does the above print??
 
+## What does scanf return?? And how can we use it?
+
+Change the array code to read in numbers only printing the odd ones till the user sends an EOF (Ctrl + D) signal.
+
+HINT: Begin by capping the user's maximum number of entered inputs to 10 then think about if you need the array?
+
 ## Functions!!!
 
 On the board.  I'll update these notes with a recap.
+
+Can you edit the array code to use a function?
