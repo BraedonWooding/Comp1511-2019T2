@@ -52,16 +52,16 @@ int main(void) {
 // You should not need to change the printCanvas function.
 void printCanvas(int canvas[N_ROWS][N_COLS]) {
     int row = 0;
-        while (row < N_ROWS) {
-                int col = 0;
-                        while (col < N_COLS) {
-                                    printf("%d ", canvas[row][col]);
-                                                col++;
-                                                        }
-                                                                row++;
-                                                                        printf("\n");
-                                                                            }
-                                                                            }
+    while (row < N_ROWS) {
+        int col = 0;
+        while (col < N_COLS) {
+            printf("%d ", canvas[row][col]);
+            col++;
+        }
+        row++;
+        printf("\n");
+    }
+}
 
 
 // Sets the entire canvas to be blank, by setting each element in the
