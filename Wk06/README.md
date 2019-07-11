@@ -25,7 +25,7 @@ $ ./sum_digits
 
 ```shell
 $ ./echo_digits 42 23skid00 a5a5a5a hi
-42 2300 555
+> 42 2300 555
 ```
 
 ## Ciphers
