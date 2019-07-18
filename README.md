@@ -5,7 +5,7 @@ You can ignore `llv.h` it is just required for some of the code examples.  If yo
 
 ## Links
 
-- None yet!  Will be added later on.
+- [Random Numbers](random_numbers.md)
 
 ## Other Stuff
 
