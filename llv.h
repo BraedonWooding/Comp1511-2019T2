@@ -1641,6 +1641,8 @@ void fmt_update(char *fmt, ...) {
                     update_ptrs(true);
                     print_border();
                     input_wait(a, list);
+                    int c;
+                    while ((c = getchar()) != '\n' && c != EOF);
                     va_end(list);
                 } return;
             }
