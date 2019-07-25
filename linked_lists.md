@@ -114,7 +114,7 @@ struct linked_list {
 };
 ```
 
-In the location of `// place data here` you can put any data you want!  You could put a string or a number or even a pokemon...
+In the location of `// place data here` you can put any data you want!  You could put an enemy for example or a location.
 
 In the case of the choose your own adventure we would probably have;
 
@@ -132,8 +132,7 @@ struct page {
     struct page *next;
 };
 
-// The pokemon.h and pokedex.h describes this pretty well
-// it is just like a #define but for type
+// this is just like a #define but for type
 // everytime we write 'Page' it will replace it with 'struct page *'
 typedef struct page *Page;
 
@@ -184,9 +183,9 @@ Page add_to_list(Page head, Page to_add) {
 }
 
 int is_space(int c) {
-    // I got some feedback from you guys saying you prefer
-    // it written this way rather than;
-    // return c == ' ' || c == '\n' || c == '\t';
+    // You can write it as either;
+    //   return c == ' ' || c == '\n' || c == '\t';
+    // or like;
     if (c == ' ' || c == '\n' || c == '\t') {
         return true;
     } else {
