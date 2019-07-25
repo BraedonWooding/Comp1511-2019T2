@@ -7,6 +7,7 @@ You can ignore `llv.h` it is just required for some of the code examples.  If yo
 
 - [Random Numbers](random_numbers.md)
 - [Exam Questions](exam_questions.md)
+- [Linked List why do we use them?](linked_lists.md)
 
 ## Other Stuff
 
