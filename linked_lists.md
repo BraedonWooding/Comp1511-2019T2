@@ -23,7 +23,7 @@ In memory it looks something like (to save horizontal space I'm going to just in
 
 Now as you can see it is very compact and interestingly enough if you do; `intArray[-1]` you will get `2` (note: dcc will give you an error cause it is out of bounds; if you want to run this you need to tell the compiler 'shush its okay' and use gcc like; `gcc -o0 my_file.c -o output_file`).
 
-The problem is however is that our arrays are always going to be size 5; what if we want to increase the size of the array?  Such as adding a pokemon to a pokedex?
+The problem is however is that our arrays are always going to be size 5; what if we want to increase the size of the array?  Such as adding an enemy to a location?
 
 Well using malloc we can!
 
