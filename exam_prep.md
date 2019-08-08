@@ -32,8 +32,7 @@ struct node *list_append(struct node *list1, struct node *list2) {
 1) Asking for the the second list to be added to the end of the first list
 2) I'll need a loop to find the last element of list1
   - Starting at head, ending at last element before NULL (if any), no logic inside
-3) See board
-  - Empty list1, empty list2 are edge cases, in these cases return the non empty list (or NULL if both are empty)
+3) Empty list1, empty list2 are edge cases, in these cases return the non empty list (or NULL if both are empty)
 4) No I don't
 
 Okay from that we get the following skeleton;
