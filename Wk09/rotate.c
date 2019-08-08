@@ -30,6 +30,29 @@ int find_nth_from_last(struct node *head, int nth) {
     return last->data;
 }
 
+struct node *copy(struct node *head) {
+    struct node *cur = head;
+    struct node *new_head = NULL;
+    struct node *prev_handled = NULL;
+    
+    while (cur != NULL) {
+        struct node *new = malloc(sizeof(struct node));
+        new->data = cur->data;
+        new->next = NULL;
+        
+        if (prev_handled != NULL) {
+            prev_handled->next = new;
+        } else {
+            new_head = new;
+        }
+        
+        prev_handled = new;
+        cur = cur->next;
+    }
+    
+    return new_head;
+}
+
 // rotate the list around the start point, 0 <= startpoint < count(head)
 // for example rotate_list(1->2->3->4, 2) = 3->4->1->2
 //             rotate_list(x, 0) = x (i.e. 0 causes no change)
