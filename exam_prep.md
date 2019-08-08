@@ -67,19 +67,6 @@ struct node *list_append(struct node *list1, struct node *list2) {
 
 See how there isn't much left!  Most of linked list code is just what we call a skeleton!
 
-### Rest of the examples;
-
-`copy_list`, `identical`, `ordered`, `set_intersection`, `set_union`
-
-1) What is the problem asking for?
-2) What kind of loop do I need (if any)?
-  - Where do I start
-  - Where do I end
-  - What if statement or logic do I need
-3) Diagram of edge cases
-  - Beginning, End, Middle
-4) Do I need a previous pointer?
-
 ### GDB, Valgrind
 
 GDB allows you to step through your program one line at a time!  Valgrind has slightly better memory checking (since it gives you something called a stacktrace) than --leak check.
