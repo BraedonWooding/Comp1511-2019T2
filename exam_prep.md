@@ -6,6 +6,8 @@ For the theory questions do the questions [here](theory_questions.md)
 
 If you are stuck you can check out hints [here](hints.md) NOTE: these often give away the procedure and maybe snippets of code but they are better than just looking at the answers.
 
+Solutions are [here](Solutions)
+
 ### Ways to solve Linked List problems
 
 1) What is the problem asking for?
