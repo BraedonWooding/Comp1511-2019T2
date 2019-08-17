@@ -1,5 +1,6 @@
 #include <assert.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 #include <math.h>
 
@@ -205,8 +206,6 @@ void printBigInt(char *out, BigInt a) {
 // EXTENSION (quite a bit harder)
 // return a * b;
 BigInt mulBigInt(BigInt a, BigInt b) {
-    // this doesnt' care about memory and leaks everywhere
-    // typically don't focus on memory leaks in tests
     BigInt num = malloc(sizeof(struct _big_int_t));
     num->num = malloc(sizeof(int));
     num->size = 1;
@@ -267,9 +266,7 @@ BigInt mulBigInt(BigInt a, BigInt b) {
 }
 
 int main(void) {
-    // Normally you would free all these big ints but I'm going to just leave
-    // that out.
-
+    printf("Doing tests for big int\n");
     // Tests
     // You may want to comment out the asserts
     // for the functions you haven't implemented yet
@@ -336,6 +333,27 @@ int main(void) {
     BigInt n = newBigInt("00008");
     printBigInt(buf, n);
     assert(strcmp(buf, "8") == 0);
+    
+    // big free list of just all the stuff we allocated
+    freeBigInt(a);
+    freeBigInt(b);
+    freeBigInt(c);
+    freeBigInt(d);
+    freeBigInt(e);
+    freeBigInt(f);
+    freeBigInt(g);
+    freeBigInt(h);
+    freeBigInt(i);
+    freeBigInt(j);
+    freeBigInt(k);
+    freeBigInt(l);
+    freeBigInt(m);
+    freeBigInt(n);
+    freeBigInt(test1);
+    freeBigInt(test2);
+    freeBigInt(test3);
 
+    printf("Tests passed for big int!\n");
+    
     return 0;
 }
