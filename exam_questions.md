@@ -708,11 +708,14 @@ Hints:
 - Think about addition/subtraction/... digit by digit
 - Think about how you can handle negative numbers
   - Look up [SMR](https://en.wikipedia.org/wiki/Signed_number_representations#Signed_magnitude_representation_(SMR)) for perhaps another hint
+- Remember to free memory!  You can run it with `dcc --leak-check big_int.c -o big_int` to check for leaks (or using valgrind like the exam prep talks about)
 
 ```c
 #include <assert.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
+#include <math.h>
 
 struct _big_int_t {
     // @TODO
@@ -725,6 +728,7 @@ BigInt addBigInt(BigInt a, BigInt b);
 BigInt subBigInt(BigInt a, BigInt b);
 BigInt mulBigInt(BigInt a, BigInt b);
 void printBigInt(char *out, BigInt a);
+void freeBigInt(BigInt bigInt);
 
 // As a sequence of digits i.e. "12342424"
 // can have a negative sign at the front i.e. "-123"
@@ -754,6 +758,7 @@ BigInt mulBigInt(BigInt a, BigInt b) {
 }
 
 int main(void) {
+    printf("Doing tests for big int\n");
     // Tests
     // You may want to comment out the asserts
     // for the functions you haven't implemented yet
@@ -820,8 +825,27 @@ int main(void) {
     BigInt n = newBigInt("00008");
     printBigInt(buf, n);
     assert(strcmp(buf, "8") == 0);
+    
+    // big free list of just all the stuff we allocated
+    freeBigInt(a);
+    freeBigInt(b);
+    freeBigInt(c);
+    freeBigInt(d);
+    freeBigInt(e);
+    freeBigInt(f);
+    freeBigInt(g);
+    freeBigInt(h);
+    freeBigInt(i);
+    freeBigInt(j);
+    freeBigInt(k);
+    freeBigInt(l);
+    freeBigInt(m);
+    freeBigInt(n);
+    freeBigInt(test1);
+    freeBigInt(test2);
+    freeBigInt(test3);
 
-    return 0;
+    printf("Tests passed for big int!\n");
 }
 ```
 
