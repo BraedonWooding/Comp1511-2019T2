@@ -37,9 +37,6 @@ The more typical iterative form is messier and actually works bottom up!
 int bottom_up_fib(int n) {
     int a = 1;
     int b = 1;
-    if (n <= 1) {
-        return 1;
-    }
     int i = 1;
     while (i < n) {
        int tmp = a + b;
