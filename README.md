@@ -1,5 +1,8 @@
-# Comp1511-2019T2
-Comp Class for 2019 T2 - All tutorial content + some extra tidbits.
+# Comp1511 Auxillary Notes
+
+Originally for Comp1511 T2.  Now just changed for any semesteer.
+
+> Some of the content was specifically made for the assignments of T2 so may be a bit outdated.
 
 FOR EXAM PREP click [this](exam_prep.md)
 
